@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+<div id="container">
+    <h1 id="header">Doe De Vlaggen Quiz!</h1>
+    <div id="startmakkelijk" >Makkelijk</div>
+    <div id="start">Moeilijk</div>
+    <div id="quiz" style="display: none">
+        <div id="levens">
+            <p id="levenmakkelijk"  style="display: none">Je mag maar drie fouten maken anders is het game over</p>
+            <p id="leven"  style="display: none" >Je mag maar vijf fouten maken anders is het game over</p>
+        </div>
+        <div id="question"></div>
+        <div id="qImg"></div>
+
+        <div id="choices" style="display: none">
+            <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+            <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+            <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+            <div class="choice" id="D" onclick="checkAnswer('D')"></div>
+        </div>
+        <div id="choicesmakkelijk" style="display: none">
+            <div class="choice1" id="A1" onclick="checkmakkelijkAnswer('A1')"></div>
+            <div class="choice1" id="B1" onclick="checkmakkelijkAnswer('B1')"></div>
+            <div class="choice1" id="C1" onclick="checkmakkelijkAnswer('C1')"></div>
+            <div class="choice1" id="D1" onclick="checkmakkelijkAnswer('D1')"></div>
+        </div>
+        <div style="clear: both"></div>
+        <div id="timer">
+            <div id="counter"></div>
+            <div id="btimeGauge"></div>
+            <div id="timeGauge"></div>
+        </div>
+        <div id="progress"></div>
+    </div>
+    <div id="scoreContainer" style="display: none">
+    </div>
+
+</div>
+<script src="quiz.js"></script>
+</body>
+</html>

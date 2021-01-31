@@ -1,0 +1,496 @@
+
+    body {
+        font-size: 20px;
+        font-family: monospace;
+        background-image: url("img/achtergrond.jpg");
+    }
+
+    #header {
+        text-align: center;
+    }
+
+    #container {
+        margin: 20px auto;
+        background-color: white;
+        height: 300px;
+        width: 900px;
+        border-radius: 5px;
+        box-shadow: 0px 5px 15px 0px;
+        position: relative;
+    }
+
+    #start {
+        float: left;
+        font-size: 50px;
+        font-weight: bolder;
+        word-break: break-all;
+        width: 300px;
+        height: 60px;
+        border: 10px solid blue;
+        text-align: center;
+        cursor: pointer;
+        left: 300px;
+        top: 50px;
+        color: blue;
+    }
+
+    #start:hover {
+        border: 10px solid black;
+        color: black;
+    }
+
+    #startmakkelijk {
+        float: left;
+        margin-left: 100px;
+        margin-right: 20px;
+        font-size: 50px;
+        font-weight: bolder;
+        word-break: break-all;
+        width: 300px;
+        height: 60px;
+        border: 10px solid blue;
+        text-align: center;
+        cursor: pointer;
+
+        left: 300px;
+        top: 50px;
+        color: blue;
+    }
+
+    #startmakkelijk:hover {
+        border: 10px solid black;
+        color: black;
+    }
+
+
+    #qImg {
+        width: 200px;
+        max-width: 100%;
+        height: 200px;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        border: 1px solid black
+    }
+
+    #qImg img {
+        width: 200px;
+        height: 200px;
+
+    }
+
+    #question {
+        max-width: 100%;
+        height: 125px;
+        position: absolute;
+        margin-right: 100px;
+        margin-top: 30px;
+        right: 0;
+        top: 0;
+    }
+
+    #question p {
+        padding: 15px;
+        font-size: 30px;
+    }
+
+    #levens {
+        max-width: 100%;
+        height: 125px;
+        position: absolute;
+        margin-right: 10px;
+        right: 0;
+        top: 0;
+        font-size: 23px;
+    }
+
+
+    #choices {
+        width: 650px;
+        max-width: 100%;
+        position: absolute;
+        right: 0;
+        top: 125px;
+        padding: 10px
+    }
+
+    #choicesmakkelijk {
+        width: 650px;
+        max-width: 100%;
+        position: absolute;
+        right: 0;
+        top: 125px;
+        padding: 10px
+    }
+
+    .choice {
+        display: inline-block;
+        width: 135px;
+        text-align: center;
+        border: 1px solid grey;
+        border-radius: 5px;
+        cursor: pointer;
+        padding: 5px;
+    }
+
+    .choice:hover {
+        border: 2px solid grey;
+        font-weight: bold;
+    }
+
+    .choice1 {
+        display: inline-block;
+        width: 135px;
+        text-align: center;
+        border: 1px solid grey;
+        border-radius: 5px;
+        cursor: pointer;
+        padding: 5px;
+    }
+
+    .choice1:hover {
+        border: 2px solid grey;
+        font-weight: bold;
+    }
+
+
+    #timer {
+        position: absolute;
+        height: 100px;
+        width: 200px;
+        bottom: 0px;
+        text-align: center;
+    }
+
+    #counter {
+        font-size: 3em;
+    }
+
+    #btimeGauge {
+        width: 150px;
+        height: 10px;
+        border-radius: 10px;
+        background-color: lightgray;
+        margin-left: 25px;
+    }
+
+    #timeGauge {
+        height: 10px;
+        border-radius: 10px;
+        background-color: mediumseagreen;
+        margin-top: -10px;
+        margin-left: 25px;
+    }
+
+    #progress {
+        width: 600px;
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        padding: 5px;
+        text-align: right;
+    }
+
+    .prog {
+        width: 25px;
+        height: 25px;
+        border: 1px solid #000;
+        display: inline-block;
+        border-radius: 50%;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    #scoreContainer {
+        margin: 20px auto;
+        background-color: white;
+        height: 300px;
+        width: 900px;
+        border-radius: 5px;
+        box-shadow: 0px 5px 15px 0px;
+        position: relative;
+        display: none;
+    }
+
+    #scoreContainer img {
+        position: absolute;
+        top: 100px;
+        left: 425px;
+    }
+
+    #scoreContainer p {
+        position: absolute;
+        display: block;
+        width: 59px;
+        height: 59px;
+        top: 130px;
+        left: 425px;
+        font-size: 1.5em;
+        font-weight: bold;
+        text-align: center;
+
+    }
+
+
+    @media only screen and (max-width: 420px) {
+        body {
+            font-size: 30px;
+            background-image: none;
+        }
+
+        #container {
+            background-color: white;
+            width: 100%;
+            height: 100%;
+            border-radius: 0;
+            box-shadow: none;
+            position: relative;
+
+        }
+
+        #start {
+            font-size: 50px;
+            font-weight: bolder;
+            word-break: break-all;
+            width: 300px;
+            max-width: 100%;
+            margin-top:  20px;
+            height: 60px;
+            border: 10px solid blue;
+            text-align: center;
+            cursor: pointer;
+            color: blue;
+        }
+
+        #start:hover {
+            border: 10px solid black;
+            color: black;
+        }
+
+        #startmakkelijk {
+            float: left;
+            margin-left: 0;
+            margin-right: 0;
+            font-size: 50px;
+            font-weight: bolder;
+            word-break: break-all;
+            width: 300px;
+            max-width: 100%;
+            height: 60px;
+            border: 10px solid blue;
+            text-align: center;
+            cursor: pointer;
+            color: blue;
+        }
+
+        #startmakkelijk:hover {
+            border: 10px solid black;
+            color: black;
+        }
+
+
+        #qImg {
+            width: 200px;
+            max-width: 100%;
+            border: 1px solid black;
+            margin-right: auto;
+            margin-left: auto;
+            position: static;
+        }
+
+        #qImg img {
+            width: 200px;
+            position: static;
+
+
+        }
+
+
+        #question {
+            position: static;
+            right: auto;
+            top: auto;
+            width: 100%;
+            margin-top: -10px;
+            margin-bottom: 0;
+            height: auto;
+
+
+        }
+
+        #question p {
+
+            padding: 0;
+            font-size: 30px;
+        }
+
+        #levens {
+            position: static;
+            width: 100%;
+            margin-top: -10px;
+            right: auto;
+            top: auto;
+            margin-bottom: 0;
+            font-size: 23px;
+            height: auto;
+        }
+
+
+
+        #choices {
+            width: 100%;
+            top: 0;
+            margin-right: auto;
+            margin-left: auto;
+            right: 1px;
+            padding: 10px;
+            position: static;
+        }
+
+        #choicesmakkelijk {
+            width: 100%;
+            top: 0;
+            right: 1px;
+            padding: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            position: static;
+        }
+
+        .choice {
+            float: left;
+            display: inline-block;
+            width: 125px;
+            text-align: center;
+            border: 1px solid grey;
+            border-radius: 5px;
+            cursor: pointer;
+            padding: 5px;
+            margin-right: 10px;
+            margin-top: 10px;
+            font-size: 15px;
+        }
+
+        .choice:hover {
+            border: 2px solid grey;
+            font-weight: bold;
+        }
+
+        .choice1 {
+            float: left;
+            display: inline-block;
+            width: 125px;
+            text-align: center;
+            border: 1px solid grey;
+            border-radius: 5px;
+            cursor: pointer;
+            padding: 5px;
+            margin-right: 10px;
+            margin-top: 10px;
+            font-size: 15px;
+        }
+
+        .choice1:hover {
+            border: 2px solid grey;
+            font-weight: bold;
+        }
+
+
+        #timer {
+
+            height: 25px;
+            width: 150px;
+            margin: 10px auto 30px  auto;
+            bottom: 0;
+            position: static;
+
+            text-align: center;
+        }
+
+        #counter {
+            font-size: 30px;
+            position: static;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #btimeGauge {
+            position: static;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #timeGauge {
+            position: static;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+
+        #progress {
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+            position: static;
+            bottom: 0px;
+            right: 0px;
+            padding: 5px;
+            text-align: right;
+        }
+
+        .prog {
+            width: 25px;
+            height: 25px;
+            border: 1px solid #000;
+            display: inline-block;
+            border-radius: 50%;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+
+
+
+        #scoreContainer {
+            background-color: white;
+            padding: 10px;
+            width: 100%;
+            height: 100%;
+            margin: 20px auto;
+            border-radius: 0;
+            box-shadow:  none;
+            display: none;
+        }
+
+        #scoreContainer img {
+            position: absolute;
+            top: 10px;
+            left: 150px;
+        }
+
+        #scoreContainer p {
+            position: absolute;
+            display: block;
+            width: 59px;
+            height: 59px;
+            top: 50px;
+            left: 150px;
+            font-size: 1.5em;
+            font-weight: bold;
+            text-align: center;
+
+        }
+        #scoreContainer button{
+          margin-top: 50px;
+
+        }
+
+
+    }
+
+
+
+
+
+
+
+
